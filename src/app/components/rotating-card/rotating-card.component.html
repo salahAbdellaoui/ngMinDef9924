@@ -11,8 +11,8 @@
           </div>
           <div class="content">
             <div class="main">
-              <h3 class="name">John Marvel</h3>
-              <p class="profession">CEO</p>
+              <h3 class="name">{{firstName}} {{lastName}}</h3>
+              <p class="profession">{{job}}</p>
               <p class="text-center">
                 "I'm the new Sinatra, and since I made it here I can make it
                 anywhere, yeah, they love me everywhere"
@@ -70,6 +70,8 @@
     </div>
   </div>
   <div class="col">
-    <input type="text" class="form-control"><input type="text" class="form-control"><input type="text" class="form-control"><input type="text" class="form-control">
+    <input type="text" class="form-control" [(ngModel)]="firstName"><input type="text" class="form-control" [(ngModel)]="lastName"><input type="text" class="form-control" [(ngModel)]="job"><input type="text" class="form-control" [(ngModel)]="path">
   </div>
-</div>
+  <div class="col"></div>
+    <button class="btn btn-primary" (click)="changeName()">Change Name</button>
+  </div>
