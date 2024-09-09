@@ -1,18 +1,4 @@
 
-<input (change)="color = myInput.value" #myInput class="form-control" type="text" />
+<input (change)="changeColor(colorInput)" type="text" #colorInput class="form-control">
 
-<div [style.backgroundColor]="color">color works!</div>
-<button class="btn btn-danger" ></button>
-<button (click)="defaultColor()" class="btn btn-danger">
- Default
-</button>
-
-
-
-<input
-(change)="changeColor(colorInput)"
-type="text" #colorInput class="form-control">
-
-<button
-  class="btn btn-danger"
-  (click)="reset()">reset</button>
+<button  class="btn btn-danger"  (click)="reset()">reset</button>
