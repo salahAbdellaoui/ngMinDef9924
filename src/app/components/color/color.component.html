@@ -1,2 +1,10 @@
+
+<input (change)="color = myInput.value" #myInput class="form-control" type="text" />
+
 <div [style.backgroundColor]="color">color works!</div>
+<button class="btn btn-danger" ></button>
+<button (click)="defaultColor()" class="btn btn-danger">
+ Default
+</button>
+
 
